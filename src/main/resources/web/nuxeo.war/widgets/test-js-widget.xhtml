@@ -16,8 +16,10 @@
   </c:if>
 
   <c:if test="#{nxl:isLikeViewMode(widget.mode)}">
-    <h:outputText
-      value="Coucou, I am in view mode and I don't do anything special, I am just stylish" />
+    <div class="doItRedAndYellow">
+      <h:outputText
+        value="Coucou, I am in view mode and I don't do anything special, I am just stylish" />
+    </div>
   </c:if>
 
   <c:if test="#{widget.mode == 'edit'}">
