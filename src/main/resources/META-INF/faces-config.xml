@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<faces-config>
+  <navigation-rule>
+    <navigation-case>
+      <from-outcome>dummyView</from-outcome>
+      <to-view-id>/dummy/dummyView.xhtml</to-view-id>
+      <redirect/>
+    </navigation-case>
+  </navigation-rule>
+</faces-config>
