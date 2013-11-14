@@ -2,5 +2,5 @@
 
 function doSomething() {
 	// Calling the framework
-	ZeFrameworkSomething("Alors ?");
+  ZeFrameworkSomething("Alors ?");
 }
