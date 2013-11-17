@@ -1,11 +1,42 @@
-<!-- test-js-widget.xhtml -->
-<!-- doSomething() is in test-js-widget.js -->
-<div id="ze_dashboard" onclick="doSomething();" class="doItRedAndYellow">
-Coucou
+<c:if test="true" xmlns:ui="http://java.sun.com/jsf/facelets"
+  xmlns:f="http://java.sun.com/jsf/core"
+  xmlns:h="http://java.sun.com/jsf/html"
+  xmlns:c="http://java.sun.com/jstl/core"
+  xmlns:nxthemes="http://nuxeo.org/nxthemes"
+  xmlns:a4j="https://ajax4jsf.dev.java.net/ajax"
+  xmlns:nxd="http://nuxeo.org/nxweb/document"
+  xmlns:nxl="http://nuxeo.org/nxforms/layout"
+  xmlns:nxu="http://nuxeo.org/nxweb/util">
+
+  <c:if test="false">
+    <!-- test-js-widget.xhtml -->
+    <!-- doSomething() is in test-js-widget.js -->
+    Do not put comment directely in xhtml or you are gonna have trouble.
+    Use c:if test="false" to add comment in xhtml code.
+  </c:if>
+  
+<script src="#{contextPath}/scripts/a-framework.js" />
+<script src="#{contextPath}/scripts/test-js-widget.js" />
+
+<div id="test_main_div" class="doItRedAndYellow" onclick="doSomething();">
+Main DIV. Using the "doItRedAndYellow" style<br/>
+A single click calls the specific js and console.log() a dummy string<br/>
+(this let's us check the test-js-widget.js was correctly loaded)<br/>
+	<div id="test_sub_div" style="width=200px;height=200px;background-color:black;color:white"
+	onclick="ZeFrameworkChangeClass('test_sub_div')">
+An embeded DIV with its specific style, including width/height.<br/>
+Here, a click calls the pseudo-framework<br/>
+which changes the style (using a style from the<br/>
+pseudo-framework
+	</div>
 </div>
-<script>
-jQuery(document).ready(function() {
-	// calling a funcion in a-framework.js
-	ZeFrameworkInit("Hop");
-}
-</script>
+
+  <script>
+  jQuery(document).ready(function() {
+          // calling a funcion in a-framework.js
+         console.log("#{fieldOrValue}");//ZeFrameworkInit("#{fieldOrValue}");
+         //debugger;
+      });
+      </script>
+
+</c:if>

@@ -5,7 +5,7 @@ Bundle-ClassPath: .
 Bundle-Version: 1.0
 Bundle-Name: test-nuxeo-js-widget
 Bundle-ManifestVersion: 2
-Nuxeo-Component: OSGI-INF/widgettypes-contrib.xml,OSGI-INF/theme-contrib.xml
+Nuxeo-Component: OSGI-INF/theme-contrib.xml
 Bundle-SymbolicName: test-nuxeo-js-widget
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 

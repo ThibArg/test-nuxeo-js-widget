@@ -2,5 +2,5 @@
 
 function doSomething() {
 	// Calling the framework
-	ZeFrameworkSomething("Alors ?");
+	console.log("Dummy string from doSomething, in test-js-widget.js");
 }
