@@ -1,0 +1,141 @@
+/* irs-poc-widget.css */
+
+.irs_main_class {
+	border-color: grey;
+	border-style: solid;
+	border-width: 1px;
+	
+	/*background-color: lightskyblue;*/
+	/*background: linear-gradient(to right, green , blue);*/
+	
+	color: black;
+}
+
+.irs_fonts {
+	font-family: 'Lucida Grande', Arial, Helvetica, Geneva, sans-serif;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+}
+
+.tasks_title {
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	padding: 5px !important;
+	border-bottom-style: solid;
+	border-bottom-color: grey;/* same as irs_main_class */
+	border-width: 1px;
+	
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.tasks_summary {
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	padding: 5px !important;
+	border-bottom-style: solid;
+	border-bottom-color: grey;/* same as irs_main_class */
+	border-top-style: solid;
+	border-top-color: grey;/* same as irs_main_class */
+	border-width: 1px;
+	
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.irs_main_class .oneTask {
+	position: relative;
+	padding: 5px;
+	border: none;
+}
+
+.no_tasks {
+	text-align: center;
+	height: 35px;
+	line-height: 35px;
+}
+
+.loading_tasks {
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+}
+
+.progress_label_summary {
+	position: absolute;
+	font-size: large;
+	font-weight: bold;
+	color: white;
+	width: 100%;
+	text-align: center;
+	line-height: 40px;/* same as progress#irs_tasks_summary */
+}
+
+.progress_label {
+	position: absolute;
+	font-size: small;
+	color: white;
+	width: 100%;
+	text-align: center;
+	line-height: 30px;/*same as progress height*/
+}
+
+/* Used when displaying all tesks oif the engagement */
+.progress_main_label{
+	font-size: small;
+}
+
+/* When hours > hours_estimate */
+.progress_label_overloaded{
+	color:yellow;
+	font-weight:bold;
+}
+
+/*
+.progress_summary {  
+    border: 1px;
+    height: 40px;  
+	width: 100%;
+	background-color: darkgrey;
+}*/
+
+/* General class override for the progress */
+/* (we don't want animations) */
+progress {  
+    border: 1px;
+    height: 30px;  
+    /*border-radius: 9px;*/
+	width: 100%;
+	background-color: rgb(180, 180, 180);
+}
+
+
+/* Browser Specific */
+progress::-webkit-progress-bar {
+	/*border-radius: 9px;*/
+	background-color: rgb(180, 180, 180);
+}
+
+progress::-webkit-progress-value {
+	/*background-image: linear-gradient(to right, #29DDF5, #476CFF);*/	
+	/*border-radius: 9px;*/
+	background-color: rgb(78, 154, 225);
+}
+
+progress::-moz-progress-bar {
+	/*background-image: linear-gradient(to right, #29DDF5, #476CFF);*/
+	/*border-radius: 9px;*/
+	background-color: rgb(78, 154, 225);
+}
+
+progress#irs_tasks_summary {
+    border: 1px;
+    height: 40px;
+	width: 100%;
+	background-color: darkgrey;
+}
+
+
