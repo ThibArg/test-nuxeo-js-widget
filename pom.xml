@@ -9,9 +9,9 @@
   </parent>
 
   <groupId>org.nuxeo</groupId>
-  <artifactId>test-nuxeo-js-widget</artifactId>
+  <artifactId>irs-poc-nuxeo-js-widget</artifactId>
   <version>1.0</version>
-  <name>test-nuxeo-js-widget</name>
+  <name>irs-poc-nuxeo-js-widget</name>
   <description>
     
   </description>

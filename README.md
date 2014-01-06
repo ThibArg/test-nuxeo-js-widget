@@ -1,8 +1,8 @@
-test-nuxeo-js-widget
-====================
+irs-poc-nuxeo-js-widget
+=======================
 _Just quick testing/help_
 
-POC about doing JS in a Widget, in Nuxeo: We want a DIV, a framework and a css, and check our JS is called when we want and our css are available as expected.
+POC about doing JS in a Widget, in Nuxeo, displaying infos about "IRSTask" documents
 
 
 * To build the POC:
@@ -13,10 +13,8 @@ POC about doing JS in a Widget, in Nuxeo: We want a DIV, a framework and a css, 
 
 
 * To Test the POC:
-	* In your Nuxeo Studio project, go to "Resources", expand "Widget Templates"
-	* Upload the "test-js-widget.xhtml" file, located in {the source}/src/main/resources/web/nuxeo.war/widgets
 	* in a layout (for example, in a "Tab"), add a "Template" widget
-	* Select "test-js-widget.xhtml" as the template to use
+	* Add a custom property. Name "template", value: The name of the template, here "irs-poc-widget.xhtml"
 	* Save and test
 
 

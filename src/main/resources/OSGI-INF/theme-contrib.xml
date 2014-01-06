@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<component name="org.nuxeo.ecm.platform.ui.test-js-widget.theme.contrib">
+<component name="org.nuxeo.ecm.platform.ui.irs-poc-widget.theme.contrib">
 
   <require>org.nuxeo.theme.nuxeo.default</require>
 
@@ -7,7 +7,7 @@
 
     <themePage name="*">
       <styles append="true">
-        <style>test-js-widget</style>
+        <style>irs-poc-widget</style>
       </styles>
     </themePage>
 
@@ -16,7 +16,7 @@
   <extension target="org.nuxeo.theme.services.ThemeService" point="views">
     <view name="nuxeo5 includes" template-engine="jsf-facelets" merge="true">
       <format-type>widget</format-type>
-      <resource>test-js-widget.js</resource>
+      <resource>irs-poc-widget.js</resource>
       <resource>a-framework.css</resource>
     </view>
 
@@ -31,15 +31,15 @@
       <path>scripts/a-framework.js</path>
       <require>jquery.js</require>
     </resource>
-    <resource name="test-js-widget.js">
-      <path>scripts/test-js-widget.js</path>
+    <resource name="irs-poc-widget.js">
+      <path>scripts/irs-poc-widget.js</path>
       <require>a-framework.js</require>
     </resource>
   </extension>
 
   <extension target="org.nuxeo.theme.styling.service" point="styles">
-    <style name="test-js-widget">
-      <src>themes/css/test-js-widget.css</src>
+    <style name="irs-poc-widget">
+      <src>themes/css/irs-poc-widget.css</src>
     </style>
   </extension>
 
